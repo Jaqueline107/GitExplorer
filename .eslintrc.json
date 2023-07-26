@@ -24,25 +24,19 @@
         "prettier"
     ],
     "rules": {
-       " @typescript-eslint/consistent-type-imports": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-floating-promises": "off",
+        "@typescript-eslint/no-misused-promises": [
+            "error",
+            {
+                "checksVoidReturn": false
+            }
+        ],
+        "@typescript-eslint/strict-boolean-expressions": "off",
         "react-hooks/rules-of-hooks": "error",
         "prettier/prettier": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extension": [
-                    ".tsx"
-                ]
-            }
-        ],
         "import/prefer-default-export": "off",
-        "typescript-eslint/explicit-function-return-type": [
-            "error",
-            {
-                "allowExpressions": true
-            }
-        ],
         "import/extensions": [
             "error",
             "ignorePackages",
